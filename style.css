@@ -17,10 +17,10 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* push nav and logo right */
-  gap: 0; /* no gap between logo and nav */
+  justify-content: flex-start; /* push items to the left */
+  gap: 1.5rem; /* space between logo and tabs */
   padding: 1rem 2rem;
-  background: transparent; /* no background color */
+  background: transparent;
   position: relative;
   z-index: 10;
 }
@@ -48,7 +48,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: #E00122;
 }
 
 /* MAIN CONTENT */
@@ -78,7 +78,7 @@ main {
 /* ROCKETRY CLUB LINE */
 .rocketry {
   font-family: 'Aileron', sans-serif;
-  font-size: 12vw;
+  font-size: 15vw;
   color: #E00122;
   letter-spacing: -0.075em;
   margin: 0;
