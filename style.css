@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* BACKGROUND + PAGE SETUP */
 body {
   font-family: 'Roboto', sans-serif;
@@ -17,8 +23,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* push items to the left */
-  gap: 1.5rem; /* space between logo and tabs */
+  justify-content: flex-start; /* logo and nav aligned left */
   padding: 1rem 2rem;
   background: transparent;
   position: relative;
@@ -29,9 +34,9 @@ header {
 .logo {
   height: 80px;
   width: auto;
-  margin-left: 0; /* no gap */
+  margin: 0; /* ensure no spacing */
+  padding: 0; /* ensure no spacing */
 }
-
 /* NAVIGATION */
 nav {
   display: flex;
