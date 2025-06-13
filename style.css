@@ -1,4 +1,4 @@
-/* Reset and body styles */
+/* Reset & basics */
 body {
   margin: 0;
   padding: 0;
@@ -13,53 +13,29 @@ body {
   flex-direction: column;
 }
 
-/* Logo fixed top-right */
-.logo-topright {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  height: 100px; /* adjust size */
-  width: auto;
-  z-index: 1000;
-}
-
-/* Center the two lines of text vertically and horizontally */
-main {
-  flex: 1; /* fill remaining space */
+/* Header */
+header {
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+  background: transparent;
+  position: relative;
+  z-index: 10;
 }
 
-/* Wrapper for center text */
-.center-text {
-  user-select: none;
+.logo {
+  height: 80px;
+  width: auto;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
 }
 
-/* Top line - University of Cincinnati */
-.top-line {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 5rem;  /* huge size */
-  color: #7E0701;
-  margin: 0;
-}
-
-/* Bottom line - Rocketry Club */
-.bottom-line {
-  font-family: 'Roboto', sans-serif;
-  font-size: 4rem;
-  color: #C10F02;
-  margin: 0;
-  margin-top: 0.3em;
-}
-
-/* Navigation bar on bottom right */
+/* Navigation */
 nav {
   display: flex;
-  justify-content: flex-end;
   gap: 1.5rem;
-  padding: 1rem 2rem;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -67,7 +43,6 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
@@ -75,25 +50,52 @@ nav a:hover {
   color: #ffcc00;
 }
 
-/* Footer with no background color */
+/* Main content container */
+main.centered-text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 0 1rem;
+  user-select: none;
+}
+
+/* University line */
+.university {
+  font-family: 'Anton', sans-serif;
+  font-size: 10vw; /* huge, responsive */
+  color: #6B0605;
+  letter-spacing: -0.028em; /* negative letter spacing */
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Rocketry Club line */
+.rocketry-club {
+  font-family: 'Aileron', sans-serif;
+  font-size: 8vw;
+  color: #E00122;
+  letter-spacing: -0.075em; /* negative letter spacing */
+  margin: 0;
+  line-height: 1;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Footer */
 footer {
+  background: transparent;
   padding: 1rem;
   text-align: center;
   color: #ccc;
-}
-
-/* Responsive scaling for smaller screens */
-@media (max-width: 768px) {
-  .top-line {
-    font-size: 3rem;
-  }
-  .bottom-line {
-    font-size: 2.5rem;
-  }
-  .logo-topright {
-    height: 70px;
-  }
-  nav {
-    font-size: 1rem;
-  }
 }
