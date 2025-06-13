@@ -12,6 +12,7 @@ body {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   padding: 1rem;
   background-color: #FF0000;
@@ -25,10 +26,15 @@ header h1 {
   margin: 0;
 }
 
+nav {
+  display: flex;
+  gap: 1.5rem; /* spacing between tabs */
+}
+
 nav a {
-  color: white;
+  color: white; /* or whatever your design calls for */
   text-decoration: none;
-  margin-right: 15px;
+  font-weight: bold;
 }
 
 main {
