@@ -1,48 +1,93 @@
+/* BACKGROUND + PAGE SETUP */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-image: url('images/homepage.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white; /* Optional: make text readable */
+  color: white;
   margin: 0;
   padding: 0;
 }
 
+/* HEADER LAYOUT */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem;
-  background-color: #FF0000;
+  padding: 1rem 2rem;
+  background-color: #cc0000; /* darker red */
+  color: white;
 }
 
+/* LOGO */
 .logo {
-  height: 120px; /* adjust size as needed */
+  height: 120px;
   width: auto;
 }
+
+/* TITLE */
 header h1 {
   margin: 0;
+  font-size: 1.8rem;
+  flex: 1;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
+/* NAVIGATION */
 nav {
   display: flex;
-  gap: 1.5rem; /* spacing between tabs */
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 nav a {
-  color: white; /* or whatever your design calls for */
+  color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* MAIN CONTENT */
 main {
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem;
+  margin: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
 }
 
+/* FOOTER */
 footer {
-  background-color: #eee;
+  background-color: #222;
   padding: 1rem;
   text-align: center;
+  color: #ccc;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .logo {
+    height: 80px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
 }
