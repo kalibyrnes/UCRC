@@ -8,7 +8,6 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  background-attachment: fixed;
 }
 
 /* HEADER LAYOUT */
@@ -18,8 +17,8 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem 2rem;
-  background-color: #cc0000; /* darker red */
+  padding: 0.5rem 2rem;
+  background-color: transparent; /* make background clear */
   color: white;
 }
 
@@ -32,12 +31,11 @@ header {
 /* TITLE */
 header h1 {
   font-family: 'Anton', sans-serif;
+  font-size: 3rem; /* bigger title */
   margin: 0;
-  font-size: 1.6rem;
   flex: 1;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
-
 
 /* NAVIGATION */
 nav {
@@ -48,17 +46,16 @@ nav {
 }
 
 nav a {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.2rem;
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
   transition: color 0.3s ease;
-  cursor: pointer;
 }
 
-nav a:hover,
-nav a:focus {
+nav a:hover {
   color: #ffcc00;
-  outline: none;
 }
 
 /* MAIN CONTENT */
@@ -72,7 +69,7 @@ main {
 
 /* FOOTER */
 footer {
-  background-color: #eeeeee;
+  background-color: #222;
   padding: 1rem;
   text-align: center;
   color: #ccc;
@@ -81,11 +78,11 @@ footer {
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
   .logo {
-    height: 80px;
+    height: 70px;
   }
 
   header h1 {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
   nav {
