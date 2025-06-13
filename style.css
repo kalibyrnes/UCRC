@@ -1,6 +1,8 @@
+/* Import Roboto fonts already linked in index.html */
+
 /* BACKGROUND + PAGE SETUP */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-image: url('images/homepage.jpg');
   background-size: cover;
   background-position: center;
@@ -8,49 +10,30 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-}
-
-/* HEADER LAYOUT */
-header {
+  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 0.5rem 2rem;
-  background-color: transparent; /* make background clear */
-  color: white;
+  flex-direction: column;
 }
 
-/* LOGO */
-.logo {
-  height: 100px;
-  width: auto;
-}
-
-/* TITLE */
-header h1 {
-  font-family: 'Anton', sans-serif;
-  font-size: 3rem; /* bigger title */
-  margin: 0;
-  flex: 1;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-}
-
-/* NAVIGATION */
+/* NAVIGATION - top right */
 nav {
   display: flex;
   gap: 1.5rem;
-  flex-wrap: wrap;
   justify-content: flex-end;
+  padding: 1rem 2rem;
+  font-family: 'Roboto', sans-serif;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 nav a {
-  font-family: 'Anton', sans-serif;
-  font-size: 1.2rem;
   color: white;
   text-decoration: none;
-  font-weight: normal;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
@@ -58,39 +41,53 @@ nav a:hover {
   color: #ffcc00;
 }
 
-/* MAIN CONTENT */
+/* MAIN content centered vertically & horizontally */
 main {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  margin: 2rem;
-  border-radius: 10px;
-  max-width: 800px;
+  flex: 1; /* take all space between nav & footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* FOOTER */
+/* The two lines of text */
+.center-text {
+  user-select: none;
+}
+
+.university {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #7E0701;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.club {
+  font-family: 'Roboto', sans-serif;
+  color: #C10F02;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* FOOTER no background */
 footer {
-  background-color: #222;
   padding: 1rem;
   text-align: center;
   color: #ccc;
+  background: transparent;
 }
 
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
-  .logo {
-    height: 70px;
-  }
-
-  header h1 {
+  .university {
     font-size: 2rem;
   }
 
-  nav {
-    justify-content: center;
+  .club {
+    font-size: 1.6rem;
   }
 
-  main {
-    margin: 1rem;
-    padding: 1.5rem;
+  nav {
+    padding: 0.75rem 1rem;
   }
 }
