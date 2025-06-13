@@ -34,9 +34,10 @@ header {
 .logo {
   height: 80px;
   width: auto;
-  margin: 0; /* ensure no spacing */
-  padding: 0; /* ensure no spacing */
+  margin: 0;
+  padding: 0;
 }
+
 /* NAVIGATION */
 nav {
   display: flex;
@@ -58,7 +59,7 @@ nav a:hover {
 
 /* MAIN CONTENT */
 main {
-  flex: 1; /* fill remaining vertical space */
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,12 +79,12 @@ main {
   margin: 0;
   text-transform: uppercase;
   line-height: 1;
-
+}
 
 /* ROCKETRY CLUB LINE */
 .rocketry {
   font-family: 'Aileron', sans-serif;
-  font-size: 11vw;
+  font-size: 10vw;
   color: #E00122;
   letter-spacing: -0.075em;
   margin: 0;
