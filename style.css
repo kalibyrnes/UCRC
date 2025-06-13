@@ -10,11 +10,17 @@ body {
 }
 
 header {
-  background-color: #FF0000;
-  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   padding: 1rem;
+  background-color: #FF0000;
 }
 
+.logo {
+  height: 60px; /* adjust size as needed */
+  width: auto;
+}
 header h1 {
   margin: 0;
 }
