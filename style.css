@@ -74,7 +74,7 @@ main {
 /* UNIVERSITY LINE */
 .university {
   font-family: 'Aileron', sans-serif;
-  font-size: 7vw;
+  font-size: 5vw;
   color: #ffffff;
   letter-spacing: -0.075em;
   margin-top: -0.2em;
@@ -86,7 +86,7 @@ main {
 /* ROCKETRY CLUB LINE */
 .rocketry {
   font-family: 'Aileron', sans-serif;
-  font-size: 7vw;
+  font-size: 5vw;
   color: #ffffff;
   letter-spacing: -0.075em;
   margin-top: -0.2em;
@@ -109,7 +109,7 @@ footer {
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
   .logo {
-    height: 60px;
+    height: 70px;
   }
 
   nav {
